@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — Skillora</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-name">Skillora</div>
+          <div class="brand-tagline">Discover, Build, Become.</div>
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="tests.html">Tests</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="monthly.html">Monthly</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="dashboard-root">
+      <h1 class="page-title">Progress dashboard</h1>
+      <p class="lede muted"><strong id="dash-career"></strong> · <span id="dash-average"></span></p>
+      <section class="section-head">
+        <h2>Current skill levels</h2>
+      </section>
+      <div id="dash-levels" class="results"></div>
+      <section class="card chart-wrap">
+        <h2>Skill scores</h2>
+        <canvas id="bar-chart" width="980" height="280"></canvas>
+      </section>
+      <section class="card chart-wrap">
+        <h2>Improvement over time</h2>
+        <p class="muted">Average score after each assessment.</p>
+        <canvas id="line-chart" width="980" height="280"></canvas>
+      </section>
+      <section class="card">
+        <h2>How much you have improved</h2>
+        <ul id="improve-list" class="improve-list"></ul>
+        <div class="actions">
+          <a class="btn secondary" href="monthly.html">Take another monthly test</a>
+          <a class="btn" href="schedule.html">Update schedule</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">Skillora helps beginners grow one skill at a time.</div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schedule — Skillora</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-name">Skillora</div>
+          <div class="brand-tagline">Discover, Build, Become.</div>
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="tests.html">Tests</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="monthly.html">Monthly</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="schedule-root">
+      <h1 class="page-title">Weekly study schedule</h1>
+      <p class="lede muted">
+        Tell us your free hours for <strong id="schedule-career"></strong>. Weak skills get more time, Good skills get light review.
+      </p>
+      <form id="hours-form" class="card">
+        <h2>Free time this week</h2>
+        <p class="muted">Hours per day (0–8).</p>
+        <div id="hours-grid" class="hours-grid"></div>
+        <div class="actions">
+          <button class="btn" type="submit">Create my schedule</button>
+        </div>
+      </form>
+      <section id="week-plan"></section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">Skillora helps beginners grow one skill at a time.</div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
